@@ -8,8 +8,38 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .navbar-menu{
+        display: block;
+      }
+      .navbar-burger{
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        .navbar-menu{
+        display: none;
+      }
+        .navbar-burger{
+        display: block;
+      }
+      .ham{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+}
+    </style>
   </head>
   <body>
+    <div class="navbar-menu">
+      <p>&#128508</p>
+    </div>
+    <div class="navbar-burger">
+      <div class="ham"></div>
+       <div class="ham"></div>
+        <div class="ham"></div>
+    </div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
